@@ -25,7 +25,6 @@ Documentation : [Docker on Windows](https://store.docker.com/editions/community/
 **Check out the video on how to install docker on Windows**:[https://www.youtube.com/watch?v=S7NVloq0EBc](https://www.youtube.com/watch?v=S7NVloq0EBc)
 
 For manual isntructions see below .... 
-
 ### Step 3 : Install
 Double-click Docker for Windows Installer to run the installer. 
 
@@ -63,7 +62,7 @@ Install [GIT](https://git-scm.com/download/win) if not already installed on your
     cd docker  
     
     # Now Clone the repo locally  
-    git clone https://github.com/Azure-Samples/docker-django-webapp-linux.git --config core.autocrlf.input 
+    git clone https://github.com/Azure-Samples/docker-django-webapp-linux.git --config core.autocrlf=input 
     cd docker-django-webapp-linux 
 
 ## Step 2: Locally build a Docker image  
