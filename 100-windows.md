@@ -93,8 +93,7 @@ Install [GIT](https://git-scm.com/download/win) if not already installed on your
 
     Tip
 
-    - You are automatically authenticated for Azure CLI 2.0 in every session.
-    - If you have multiple subscriptions, please use the following to choose the default subscription as the Azure Pass provided to you 
+    - You are automatically authenticated for Azure CLI 2.0 in every session.    - If you have multiple subscriptions, please use the following to choose the default subscription as the Azure Pass provided to you 
     
     az account set --subscription my-subscription-name 
 
@@ -147,7 +146,7 @@ Install [GIT](https://git-scm.com/download/win) if not already installed on your
   
     #Executenext commands in the Azure Cloud Shell
 
-    az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku S1 --is-linux
+    az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku S3 --is-linux
 
 ### Step 2 :Create a web app. Give it a unique name. Specify any runtime (it will be replaced later)
 
