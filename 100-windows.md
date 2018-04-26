@@ -54,7 +54,6 @@ To generate this message, Docker took the following steps:
 ```
 
 ## Exercise 2 : Dockerizing your application 
-
 ### Step 1 : Pull the image files locally  
 
 Install [GIT](https://git-scm.com/download/win) if not already installed on your machine
@@ -90,10 +89,7 @@ Install [GIT](https://git-scm.com/download/win) if not already installed on your
 
     Login via portal and launch cloud shell  https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart  
     
-    1. Launch?Cloud Shell?from the top navigation of the Azure portal? 
-    If it's the first time you open the Cloud Shell:
-    2. Select a subscription to create a storage account and Azure file share 
-    3. Select "Create storage" 
+    1. Launch Azure Cloud Shell from the top navigation of the Azure portal
 
     Tip
 
@@ -106,7 +102,6 @@ Install [GIT](https://git-scm.com/download/win) if not already installed on your
 
     # Use the Azure Cloud Shell console for the next commands.
     
-    # Use the[az appservice list-locations](https://docs.microsoft.com/en-us/cli/azure/appservice?view=azure-cli-latest#list-locations) Azure CLI command to list available locations. 
     # Create a resource group for the ACR and web app 
     
     az group create --name myResourceGroup --location "West US"    
@@ -163,23 +158,9 @@ Install [GIT](https://git-scm.com/download/win) if not already installed on your
  
        az webapp config container set --name <app_name> --resource-group myResourceGroup --docker-custom-image-name  myContainerRegistry.azurecr.io/starterapp --docker-registry-server-url https://myContainerRegistry.azurecr.io --docker-registry-server-user <registry-username> --docker-registry-server-password <password>
  
-### Step 4 : Restart your app
-
-    # Run this command 
-     
-    az webapp restart --resource-group myResourceGroup --name <your_app_name>
-
-### Step 5: Browse your app
+### Step 4: Browse your app
 
     https://<your_app_name>.azurewebsites.net 
-
-### Step 6 :  Push an update to Docker image 
-
-Go back to Azure Virtual machine to make more changes. Build the image and then push it to your Docker Hub repository. Follow the steps above to do the same
-
-### Step 7:  Browse the app 
-
-    http://<your_app_name>.azurewebsites.net
 
 ## Exercise 5:  Configure Continuous Integration/Continuous deployment on ACR 
 
@@ -205,7 +186,7 @@ Go back to Azure Virtual machine to make more changes. Build the image and then 
   
 ### Step 3: Push an update to Docker image 
 
-Go back to Azure Virtual machine to make more changes. Build the image and then push it to your Docker Hub repository. Follow the steps above to do the same
+Go back to desktop to make changes to your application. You can choose to modify index.html file under docker-django-webapp-linux/app/templates/app/ folder. Now save the file and Build the image again using steps above. Finally push it back to your Docker Hub repository. Follow the steps above.
 
 ### Step 4: Browse the app 
 
