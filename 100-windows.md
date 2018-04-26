@@ -68,9 +68,7 @@ Install [GIT](https://git-scm.com/download/win) if not already installed on your
 
 ## Step 2: Locally build a Docker image  
 **Always run docker CLI commands on administrator mode in Powershell on Command Prompt**
-
-    # You can edit the app by making changes to the html files under /app/templates/app folder. use vim [filepath] to open the file to edit. Here are commands if you are not familiar with vim  
-    
+  
     # Now  build the image  [Usage : docker build -t [Image Name]:[tag]  Dockerfile Path]. Since you are inside  docker-django-webapp-linux folder you can use . to select the docker file in the current working directory 
 
     docker build -t starterapp:latest . 
